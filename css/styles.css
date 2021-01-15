@@ -15,3 +15,15 @@ h1, p {
   display: none;
   color: orangered;
 }
+
+.img-width {
+  max-width: 50%
+}
+
+.spacer {
+  margin-bottom: 20px;
+}
+
+#spacer {
+  margin-bottom: 200px;
+}
