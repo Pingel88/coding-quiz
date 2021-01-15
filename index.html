@@ -9,10 +9,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>Progamming Language Suggester</h1>
-
-    <p>Answer the questions below to find out which programming language will suit you best. This is a totally serious questionnaire and might show you that you're in the wrong course.</p>
-    
+    <h1 class="correct-heading">Progamming Language Suggester</h1>
+    <h1 class="not-orange">Do you not know your colors?</h1>
+    <p class="correct-heading">Answer the questions below to find out which programming language will suit you best. This is a totally serious questionnaire and might show you that you're in the wrong course.</p>
+    <p class="not-orange">Try entering a more suitable color.</p>
     <form id="codeQuiz">
       <div class="form-group row">
         <label for="age" class="col-sm-3 col-form-label">Please enter your age:</label>
@@ -144,27 +144,14 @@
         </div>
       </div>
     </form>
-    <div id="bicycleResult">
+    <div id="bicycle-result">
       <p>Maybe you should learn to ride a bike before you try to learn programming.</p>
     </div>
     <div id="result">
-    <div id="results">
-      <h1 class="pythonResult">Python</h1>
-      <h1 class="goResult">Go</h1>
-      <h1 class="rubyResult">Ruby</h1>
-      <h1 class="cSharpResult">C#</h1>
-      <p>Based on your answers given, 
-        <span class="pythonResult">Python</span>
-        <span class="goResult">Go</span>
-        <span class="rubyResult">Ruby</span>
-        <span class="cSharpResult">C#</span> 
-        would be the language for which you will be the most successful. You can read more about it here at 
-        <span id="pythonUrl">the <a href="https://www.python.org/">Python homepage</a>.</span>
-        <span id="goUrl">the <a href="https://golang.org/">Go homepage</a>.</span>
-        <span id="rubyUrl">the <a href="https://www.ruby-lang.org/en/">Ruby homepage</a>.</span>
-        <span id="cSharpUrl"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Microsoft's C# page</a>.</span>
-      </p>
+      <h1 class="language-result"></h1>
+      <p>Based on your answers given, <span class="language-result"></span> would be the language for which you will be the most successful. You can read more about it here at <span class="language-url"></span></p>
     </div>
+    <h1 class="not-orange">ORANGE IS THE ONLY TRUE COLOR!</h1>
   </div>
 </body>
 </html>

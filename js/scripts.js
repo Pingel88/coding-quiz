@@ -31,29 +31,49 @@ $(document).ready(function() {
     points *= bicycle;
     
     if (points === 0) {
-      $("#bicycleResult").show();
+      $("#bicycle-result").show();
+      $("#result").hide();
+      $("body").removeClass("orange-takeover");
+      $(".correct-heading").show();
+      $(".not-orange").hide();
     } else if (points > 0 && points <= 9) {
+      $("#bicycle-result").hide();
+      $("body").removeClass("orange-takeover");
+      $(".correct-heading").show();
+      $(".not-orange").hide();
       $("#result").show();
-      $(".pythonResult").show();
-      $("#pythonUrl").show();
-    }
-      else if (points > 9 && points <= 13) {
+      $(".language-result").text("Python");
+      $(".language-url").replaceWith('<span class="language-url">the <a href="https://www.python.org/">Python homepage</a>.</span>')
+    } else if (points > 9 && points <= 13) {
+      $("#bicycle-result").hide();
+      $("body").removeClass("orange-takeover");
+      $(".correct-heading").show();
+      $(".not-orange").hide();
       $("#result").show();
-      $(".goResult").show();
-      $("#goUrl").show();
-    } 
-      else if (points > 13 && points <= 17) {
+      $(".language-result").text("Go");
+      $(".language-url").replaceWith('<span class="language-url">the <a href="https://golang.org/">Go homepage</a>.</span>')
+    } else if (points > 13 && points <= 17) {
+      $("#bicycle-result").hide();
+      $("body").removeClass("orange-takeover");
+      $(".correct-heading").show();
+      $(".not-orange").hide();
       $("#result").show();
-      $(".rubyResult").show();
-      $("#rubyUrl").show();
-    }
-      else if (points > 17 && points <= 21) {
+      $(".language-result").text("Ruby");
+      $(".language-url").replaceWith('<span class="language-url">the <a href="https://www.ruby-lang.org/en/">Ruby homepage</a>.</span>')
+    } else if (points > 17 && points <= 21) {
+      $("#bicycle-result").hide();
+      $("body").removeClass("orange-takeover");
+      $(".correct-heading").show();
+      $(".not-orange").hide();
       $("#result").show();
-      $(".cSharpResult").show();
-      $("#cSharpUrl").show();
-    } 
-      else if (points > 100) {
-      $("body").addClass("orangeTakeover");
+      $(".language-result").text("C#");
+      $(".language-url").replaceWith('<span class="language-url"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Microsoft\'s C# page</a>.</span>')
+    } else if (points > 100) {
+      $("#bicycle-result").hide();
+      $("body").addClass("orange-takeover");
+      $(".correct-heading").hide();
+      $(".not-orange").show();
+      $("#result").hide();
       }
     
     console.log(points);

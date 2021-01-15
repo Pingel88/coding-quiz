@@ -1,11 +1,21 @@
-#bicycleResult {
+h1, p {
+  width: 75%;
+}
+
+#bicycle-result {
   display: none;
 }
 
-#result, .pythonResult, .goResult, .rubyResult, .cSharpResult, #pythonUrl, #goUrl, #rubyUrl, #cSharpUrl{
+#result {
   display: none;
 }
 
-.orangeTakeover {
+.orange-takeover {
   background-color: orange;
+  color: orangered;
+}
+
+.not-orange {
+  display: none;
+  color: orangered;
 }
