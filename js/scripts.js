@@ -1,25 +1,33 @@
 $(document).ready(function() {
   $("form#codeQuiz").submit(function(event) {
+
     const age = parseInt($("input#age").val());
-    const color = ($("input#favoriteColor").val());
-    let ageResult;
-    let colorResult;
+    const color = $("input#favoriteColor").val();
+    const bear = parseInt($("input:radio[name=bear]:checked").val());
+    const covet = parseInt($("input:radio[name=covet]:checked").val());
+    const cloud = parseInt($("input:radio[name=cloud]:checked").val());
+
+    let points = 0;
     if (age <= 18) {
-      ageResult = 1;
+      points += 1;
     } else if (age > 18 && age <= 25) {
-      ageResult = 2;
+      points += 2;
     } else if (age > 25 && age <= 35) {
-      ageResult = 3;
+      points += 3;
     } else if (age > 35) {
-      ageResult = 4;
+      points += 4;
     } else {
       alert("Please enter a number for your age!")
     }
+
     if (color === "Orange" || color === "orange") {
-      colorResult = 1;
+      points += 1;
     } else {
       alert("Orange is the only true color!")
     }
+
+    points += bear + covet + cloud;
+    
 
      
 
@@ -28,7 +36,7 @@ $(document).ready(function() {
 // Modify to show quiz results
     // $("#rate").text(quote);
     // $("#quote").show();
-    alert(ageResult + colorResult);
+    alert("total points: " + points);
     event.preventDefault();
   });
 });
