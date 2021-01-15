@@ -1,4 +1,21 @@
 $(document).ready(function() {
+
+  function languageResult() {
+    $(".correct-heading").show();
+    $("body").removeClass("orange-takeover");
+    $(".not-orange").hide();
+    $("#bicycle-result").hide();
+    $("#result").show();
+    $("#age-discrepancy").hide();
+  }
+
+  function bikeAgeResult() {
+    $(".correct-heading").show();
+    $("body").removeClass("orange-takeover");
+    $(".not-orange").hide();
+    $("#result").hide();
+  }
+
   $("form#codeQuiz").submit(function(event) {
 
     const age = parseInt($("input#age").val());
@@ -31,48 +48,25 @@ $(document).ready(function() {
     points *= bicycle;
     
     if (points === 0) {
-      $(".correct-heading").show();
-      $("body").removeClass("orange-takeover");
-      $(".not-orange").hide();
+      bikeAgeResult();
       $("#bicycle-result").show();
-      $("#result").hide();
       $("#age-discrepancy").hide();
-    } else if (points > 0 && points <= 9) {
-      $(".correct-heading").show();
-      $("body").removeClass("orange-takeover");
-      $(".not-orange").hide();
-      $("#bicycle-result").hide();
-      $("#result").show();
+    } else if (points > 0 && points <= 8) {
+      languageResult();
       $(".language-result").text("Python");
       $(".language-url").replaceWith('<span class="language-url">the <a href="https://www.python.org/">Python homepage</a>.</span>')
-      $("#age-discrepancy").hide();
-    } else if (points > 9 && points <= 13) {
-      $(".correct-heading").show();
-      $("body").removeClass("orange-takeover");
-      $(".not-orange").hide();
-      $("#bicycle-result").hide();
-      $("#result").show();
+    } else if (points > 8 && points <= 11) {
+      languageResult();
       $(".language-result").text("Go");
       $(".language-url").replaceWith('<span class="language-url">the <a href="https://golang.org/">Go homepage</a>.</span>')
-      $("#age-discrepancy").hide();
-    } else if (points > 13 && points <= 17) {
-      $(".correct-heading").show();
-      $("body").removeClass("orange-takeover");
-      $(".not-orange").hide();
-      $("#bicycle-result").hide();
-      $("#result").show();
+    } else if (points > 11 && points <= 14) {
+      languageResult();
       $(".language-result").text("Ruby");
       $(".language-url").replaceWith('<span class="language-url">the <a href="https://www.ruby-lang.org/en/">Ruby homepage</a>.</span>')
-      $("#age-discrepancy").hide();
-    } else if (points > 17 && points <= 21) {
-      $(".correct-heading").show();
-      $("body").removeClass("orange-takeover");
-      $(".not-orange").hide();
-      $("#bicycle-result").hide();
-      $("#result").show();
+    } else if (points > 14 && points <= 17) {
+      languageResult();
       $(".language-result").text("C#");
       $(".language-url").replaceWith('<span class="language-url"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Microsoft\'s C# page</a>.</span>')
-      $("#age-discrepancy").hide();
     } else if (points > 100) {
       $(".correct-heading").hide();
       $("body").addClass("orange-takeover");
@@ -81,13 +75,12 @@ $(document).ready(function() {
       $("#result").hide();
       $("#age-discrepancy").hide();
     } else if (points < 0) {
-      $(".correct-heading").show();
-      $("body").removeClass("orange-takeover");
-      $(".not-orange").hide();
+      bikeAgeResult();
       $("#bicycle-result").hide();
-      $("#result").hide();
       $("#age-discrepancy").show();
     }
+
+    window.scrollBy(0,100);
 
     event.preventDefault();
 
