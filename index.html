@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Which programming language suits you?</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Progamming Language Suggester</h1>
+
+    <p>Answer the questions below to find out which programming language will suit you best. This is a totally serious questionnaire and might show you that you're in the wrong course.</p>
+
+
+    <form>
+      <div class="form-group row">
+        <label for="age" class="col-sm-3 col-form-label">Please enter your age:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="age" placeholder="Enter your age">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="favoriteColor" class="col-sm-3 col-form-label">What is your favorite color?</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-3 pt-0">What kind of bear is best?</legend>
+          <div class="col-sm-5">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bear" id="gridRadios1" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                Brown Bear
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bear" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Yogi Bear
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bear" id="gridRadios3" value="option3">
+              <label class="form-check-label" for="gridRadios3">
+                Black Bear
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bear" id="gridRadios4" value="option4">
+              <label class="form-check-label" for="gridRadios4">
+                Smokey Bear
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-3 pt-0">Which of these items do you covet the most?</legend>
+          <div class="col-sm-5">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="covet" id="gridRadios1" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                The letter "C"
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="covet" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                The "Go" square on a Monopoly board game
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="covet" id="gridRadios3" value="option3">
+              <label class="form-check-label" for="gridRadios3">
+                A snake
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="covet" id="gridRadios4" value="option4">
+              <label class="form-check-label" for="gridRadios4">
+                A ruby necklace
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-3 pt-0">What is your favorite kind of cloud?</legend>
+          <div class="col-sm-5">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="cloud" id="gridRadios1" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                Cirrus
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="cloud" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Nimbostratus
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="cloud" id="gridRadios3" value="option3">
+              <label class="form-check-label" for="gridRadios3">
+                Cumulus
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="cloud" id="gridRadios4" value="option4">
+              <label class="form-check-label" for="gridRadios4">
+                Stratus
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-3 pt-0">Can you ride a bicycle?</legend>
+          <div class="col-sm-5">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bicycle" id="gridRadios1" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bicycle" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <div class="col-sm-5">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="results">
+      <p>Based on your the answers given, ----- would be the language for which you will be the most successful. You can read more about it here: www.---.com.</p>
+      <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+    </div>
+  </div>
+</body>
+</html>
