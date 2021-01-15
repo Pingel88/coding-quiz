@@ -2,11 +2,7 @@ h1, p {
   width: 75%;
 }
 
-#bicycle-result {
-  display: none;
-}
-
-#result {
+#bicycle-result, #result, #age-discrepancy{
   display: none;
 }
 
