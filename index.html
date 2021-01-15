@@ -60,28 +60,27 @@
       <fieldset class="form-group">
         <div class="row">
           <legend class="col-form-label col-sm-3 pt-0">Which of these items do you covet the most?</legend>
-          <!-- The weight values here are intentionally meaningless and don't point you towards the coincidentally similar languages. -->
-          <div class="col-sm-5">
+           <div class="col-sm-5">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="covet" id="covet1" value="2">
+              <input class="form-check-input" type="radio" name="covet" id="covet1" value="8">
               <label class="form-check-label" for="covet1">
                 The letter "C"
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="covet" id="covet2" value="3">
+              <input class="form-check-input" type="radio" name="covet" id="covet2" value="4">
               <label class="form-check-label" for="covet2">
                 The "Go" square on a Monopoly board game
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="covet" id="covet3" value="1">
+              <input class="form-check-input" type="radio" name="covet" id="covet3" value="2">
               <label class="form-check-label" for="covet3">
                 A snake
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="covet" id="covet4" value="4">
+              <input class="form-check-input" type="radio" name="covet" id="covet4" value="6">
               <label class="form-check-label" for="covet4">
                 A ruby necklace
               </label>
@@ -145,10 +144,26 @@
         </div>
       </div>
     </form>
-
+    <div id="bicycleResult">
+      <p>Maybe you should learn to ride a bike before you try to learn programming.</p>
+    </div>
+    <div id="result">
     <div id="results">
-      <p>Based on your the answers given, ----- would be the language for which you will be the most successful. You can read more about it here: www.---.com.</p>
-      <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+      <h1 class="pythonResult">Python</h1>
+      <h1 class="goResult">Go</h1>
+      <h1 class="rubyResult">Ruby</h1>
+      <h1 class="cSharpResult">C#</h1>
+      <p>Based on your answers given, 
+        <span class="pythonResult">Python</span>
+        <span class="goResult">Go</span>
+        <span class="rubyResult">Ruby</span>
+        <span class="cSharpResult">C#</span> 
+        would be the language for which you will be the most successful. You can read more about it here at 
+        <span id="pythonUrl">the <a href="https://www.python.org/">Python homepage</a>.</span>
+        <span id="goUrl">the <a href="https://golang.org/">Go homepage</a>.</span>
+        <span id="rubyUrl">the <a href="https://www.ruby-lang.org/en/">Ruby homepage</a>.</span>
+        <span id="cSharpUrl"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Microsoft's C# page</a>.</span>
+      </p>
     </div>
   </div>
 </body>

@@ -18,27 +18,46 @@ $(document).ready(function() {
     } else if (age > 35) {
       points += 2;
     } else {
-      alert("Please enter a number for your age!")
+      alert("Please enter a number for your age!");
     }
 
     if (color === "Orange" || color === "orange") {
       points += 1;
     } else {
-      points + 100;
+      points += 100;
     }
 
     points += bear + covet + cloud
     points *= bicycle;
     
+    if (points === 0) {
+      $("#bicycleResult").show();
+    } else if (points > 0 && points <= 9) {
+      $("#result").show();
+      $(".pythonResult").show();
+      $("#pythonUrl").show();
+    }
+      else if (points > 9 && points <= 13) {
+      $("#result").show();
+      $(".goResult").show();
+      $("#goUrl").show();
+    } 
+      else if (points > 13 && points <= 17) {
+      $("#result").show();
+      $(".rubyResult").show();
+      $("#rubyUrl").show();
+    }
+      else if (points > 17 && points <= 21) {
+      $("#result").show();
+      $(".cSharpResult").show();
+      $("#cSharpUrl").show();
+    } 
+      else if (points > 100) {
+      $("body").addClass("orangeTakeover");
+      }
+    
+    console.log(points);
 
-     
-
-
-
-// Modify to show quiz results
-    // $("#rate").text(quote);
-    // $("#quote").show();
-    alert("total points: " + points);
     event.preventDefault();
   });
 });

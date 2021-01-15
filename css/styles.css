@@ -1,0 +1,11 @@
+#bicycleResult {
+  display: none;
+}
+
+#result, .pythonResult, .goResult, .rubyResult, .cSharpResult, #pythonUrl, #goUrl, #rubyUrl, #cSharpUrl{
+  display: none;
+}
+
+.orangeTakeover {
+  background-color: orange;
+}
