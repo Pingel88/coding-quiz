@@ -24,12 +24,26 @@ h1, p {
 }
 
 .btn-primary {
-  color: orange;
+  color: #fff;
   background-color: orangered;
   border-color: darkorange;
 }
 
 .btn-primary:hover {
+  color: #fff;
+  background-color: orange;
+  border-color: darkorange;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: orangered;
+  border-color: darkorange;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: orange;
   border-color: darkorange;
