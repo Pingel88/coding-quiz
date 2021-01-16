@@ -13,7 +13,6 @@ h1, p {
 
 .not-orange {
   display: none;
-  color: orangered;
 }
 
 .img-width {
@@ -24,6 +23,19 @@ h1, p {
   margin-bottom: 20px;
 }
 
-#spacer {
-  margin-bottom: 200px;
+.btn-primary {
+  color: orange;
+  background-color: orangered;
+  border-color: darkorange;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: orange;
+  border-color: darkorange;
+}
+
+.orange-takeover input[type=text] {
+  background-color: orangered;
+  color: white;
 }

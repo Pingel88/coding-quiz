@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   function languageResult() {
-    $(".correct-heading").show();
+    $(".correct-content").show();
     $("body").removeClass("orange-takeover");
     $(".not-orange").hide();
     $("#bicycle-result").hide();
@@ -10,7 +10,7 @@ $(document).ready(function() {
   }
 
   function bikeAgeResult() {
-    $(".correct-heading").show();
+    $(".correct-content").show();
     $("body").removeClass("orange-takeover");
     $(".not-orange").hide();
     $("#result").hide();
@@ -68,7 +68,7 @@ $(document).ready(function() {
       $(".language-result").text("C#");
       $(".language-url").replaceWith('<span class="language-url"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Microsoft\'s C# page</a>.</span>')
     } else if (points > 100) {
-      $(".correct-heading").hide();
+      $(".correct-content").hide();
       $("body").addClass("orange-takeover");
       $(".not-orange").show();
       $("#bicycle-result").hide();
